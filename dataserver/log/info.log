@@ -1,0 +1,1324 @@
+2017-09-19 09:56:47.105 [main] INFO  com.gimis.DataserverApplication -Starting DataserverApplication on sunlinjun-pc with PID 2716 (E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes started by gimis in E:\JavaPro\PRODUCT_GCJX\server\dataserver)
+2017-09-19 09:56:47.143 [main] INFO  com.gimis.DataserverApplication -No profiles are active
+2017-09-19 09:56:47.221 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d9cbf5: startup date [Tue Sep 19 09:56:47 CST 2017]; root of context hierarchy
+2017-09-19 09:56:48.408 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory -Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-09-19 09:56:48.945 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'configCache' of type [class com.gimis.util.ConfigCache$$EnhancerBySpringCGLIB$$67184cb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:48.953 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ce942b51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:48.995 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$8bc2b75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:49.087 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'spring.cache.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:49.096 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$9876d636] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:49.106 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:49.109 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:56:49.696 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 9020 (http)
+2017-09-19 09:56:49.716 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-09-19 09:56:49.718 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.0.28
+2017-09-19 09:56:49.954 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-09-19 09:56:49.955 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2734 ms
+2017-09-19 09:56:50.404 [localhost-startStop-1] INFO  o.s.b.c.e.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-19 09:56:50.412 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-19 09:56:50.413 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-19 09:56:50.414 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-19 09:56:50.414 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-19 09:56:51.100 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d9cbf5: startup date [Tue Sep 19 09:56:47 CST 2017]; root of context hierarchy
+2017-09-19 09:56:51.219 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/sendCommand/{myAppKey}/{unid}/{commandid}/{content}]}" onto public java.lang.String com.gimis.web.CommandController.index(java.lang.String,java.lang.String,int,java.lang.String) throws java.io.UnsupportedEncodingException
+2017-09-19 09:56:51.226 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:56:51.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:56:51.276 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:56:51.277 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:56:51.350 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:56:51.679 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-09-19 09:56:51.934 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 9020 (http)
+2017-09-19 09:56:51.943 [main] INFO  com.gimis.DataserverApplication -Started DataserverApplication in 5.646 seconds (JVM running for 6.613)
+2017-09-19 09:56:53.899 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:56:53.980 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:56:54.009 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:56:54.010 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:56:54.022 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:56:54.039 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:56:54.040 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:56:54.040 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:56:54.043 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:56:54.057 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-2
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:56:54.061 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:56:54.061 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:56:54.709 [main] WARN  o.a.hadoop.util.NativeCodeLoader -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-09-19 09:56:54.717 [main] ERROR org.apache.hadoop.util.Shell -Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:355) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:370) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:363) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:93) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:77) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:240) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:257) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:234) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:749) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:734) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:607) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:286) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:282) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User.getCurrent(User.java:185) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.UserProvider.getCurrent(UserProvider.java:88) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:215) [hbase-client-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:119) [hbase-client-1.1.2.jar:1.1.2]
+	at com.gimis.HBase.HBaseUtil.<init>(HBaseUtil.java:72) [classes/:na]
+	at com.gimis.dataserver.gps.SavePositionThread.<init>(SavePositionThread.java:27) [classes/:na]
+	at com.gimis.DataserverApplication.main(DataserverApplication.java:53) [classes/:na]
+2017-09-19 09:56:55.213 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Discovered coordinator dn03-dev.wlwl.com:9092 (id: 2147483314 rack: null) for group dataserver.
+2017-09-19 09:56:55.216 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Revoking previously assigned partitions [] for group dataserver
+2017-09-19 09:56:55.217 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -(Re-)joining group dataserver
+2017-09-19 09:56:55.229 [main] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x2c63762b connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:56:55.236 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-09-19 09:56:55.236 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:host.name=sunlinjun-pc
+2017-09-19 09:56:55.236 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.version=1.8.0_111
+2017-09-19 09:56:55.236 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.vendor=Oracle Corporation
+2017-09-19 09:56:55.236 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.home=C:\Program Files\Java\jdk1.8.0_111\jre
+2017-09-19 09:56:55.237 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.class.path=E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.3.0.RELEASE\spring-boot-starter-web-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter\1.3.0.RELEASE\spring-boot-starter-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot\1.3.0.RELEASE\spring-boot-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.3.0.RELEASE\spring-boot-autoconfigure-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.3.0.RELEASE\spring-boot-starter-logging-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\gimis\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.13\jcl-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\jul-to-slf4j\1.7.13\jul-to-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.13\log4j-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\yaml\snakeyaml\1.16\snakeyaml-1.16.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.3.0.RELEASE\spring-boot-starter-tomcat-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.28\tomcat-embed-core-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.28\tomcat-embed-el-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.28\tomcat-embed-logging-juli-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.28\tomcat-embed-websocket-8.0.28.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-validation\1.3.0.RELEASE\spring-boot-starter-validation-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\hibernate\hibernate-validator\5.2.2.Final\hibernate-validator-5.2.2.Final.jar;C:\Users\gimis\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\gimis\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\gimis\.m2\repository\com\fasterxml\classmate\1.1.0\classmate-1.1.0.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.3\jackson-databind-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.3\jackson-annotations-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.6.3\jackson-core-2.6.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-web\4.2.3.RELEASE\spring-web-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-aop\4.2.3.RELEASE\spring-aop-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-beans\4.2.3.RELEASE\spring-beans-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-context\4.2.3.RELEASE\spring-context-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-webmvc\4.2.3.RELEASE\spring-webmvc-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-expression\4.2.3.RELEASE\spring-expression-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka_2.10\0.10.0.0\kafka_2.10-0.10.0.0.jar;C:\Users\gimis\.m2\repository\com\101tec\zkclient\0.8\zkclient-0.8.jar;C:\Users\gimis\.m2\repository\org\scala-lang\scala-library\2.10.6\scala-library-2.10.6.jar;C:\Users\gimis\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\gimis\.m2\repository\net\sf\jopt-simple\jopt-simple\4.9\jopt-simple-4.9.jar;C:\Users\gimis\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\gimis\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\gimis\.m2\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\Users\gimis\.m2\repository\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka-clients\0.10.0.1\kafka-clients-0.10.0.1.jar;C:\Users\gimis\.m2\repository\net\jpountz\lz4\lz4\1.3.0\lz4-1.3.0.jar;C:\Users\gimis\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar;C:\Users\gimis\.m2\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;C:\Users\gimis\.m2\repository\redis\clients\jedis\2.7.3\jedis-2.7.3.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\gimis\.m2\repository\mysql\mysql-connector-java\5.1.37\mysql-connector-java-5.1.37.jar;C:\Users\gimis\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.2.0\hadoop-hdfs-2.2.0.jar;C:\Users\gimis\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\gimis\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty\6.1.26\jetty-6.1.26.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-server\1.9\jersey-server-1.9.jar;C:\Users\gimis\.m2\repository\asm\asm\3.1\asm-3.1.jar;C:\Users\gimis\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\gimis\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\gimis\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar;C:\Users\gimis\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\gimis\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\gimis\.m2\repository\commons-daemon\commons-daemon\1.0.13\commons-daemon-1.0.13.jar;C:\Users\gimis\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\gimis\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\gimis\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\gimis\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.8\jackson-core-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.8\jackson-mapper-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\tomcat\jasper-runtime\5.5.23\jasper-runtime-5.5.23.jar;C:\Users\gimis\.m2\repository\commons-el\commons-el\1.0\commons-el-1.0.jar;C:\Users\gimis\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-client\1.1.2\hbase-client-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-annotations\1.1.2\hbase-annotations-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-common\1.1.2\hbase-common-1.1.2.jar;C:\Users\gimis\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-protocol\1.1.2\hbase-protocol-1.1.2.jar;C:\Users\gimis\.m2\repository\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;C:\Users\gimis\.m2\repository\org\apache\htrace\htrace-core\3.1.0-incubating\htrace-core-3.1.0-incubating.jar;C:\Users\gimis\.m2\repository\org\jruby\jcodings\jcodings\1.0.8\jcodings-1.0.8.jar;C:\Users\gimis\.m2\repository\org\jruby\joni\joni\2.1.2\joni-2.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-auth\2.5.1\hadoop-auth-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-common\2.5.1\hadoop-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-annotations\2.5.1\hadoop-annotations-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\gimis\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\gimis\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\gimis\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\gimis\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\gimis\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\gimis\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\gimis\.m2\repository\com\jcraft\jsch\0.1.42\jsch-0.1.42.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\gimis\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.5.1\hadoop-mapreduce-client-core-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.5.1\hadoop-yarn-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.5.1\hadoop-yarn-api-2.5.1.jar;C:\Users\gimis\.m2\repository\com\github\stephenc\findbugs\findbugs-annotations\1.3.9-1\findbugs-annotations-1.3.9-1.jar;C:\Users\gimis\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Program Files\Java\jdk1.8.0_111\lib\tools.jar;C:\Users\gimis\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-core\4.2.3.RELEASE\spring-core-4.2.3.RELEASE.jar
+2017-09-19 09:56:55.239 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Java\jdk1.8.0_111\jre\bin;D:\Program Files (x86)\Borland\Delphi7\Bin;D:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;E:\JavaPro\apache-maven-3.3.3\bin;C:\Program Files\nodejs\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Python\Python35;C:\Users\gimis\AppData\Roaming\npm;C:\Users\gimis\Desktop;;.
+2017-09-19 09:56:55.240 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.io.tmpdir=C:\Users\gimis\AppData\Local\Temp\
+2017-09-19 09:56:55.240 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.compiler=<NA>
+2017-09-19 09:56:55.240 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.name=Windows 8.1
+2017-09-19 09:56:55.240 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.arch=amd64
+2017-09-19 09:56:55.242 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.version=6.3
+2017-09-19 09:56:55.242 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.name=gimis
+2017-09-19 09:56:55.242 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.home=C:\Users\gimis
+2017-09-19 09:56:55.242 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.dir=E:\JavaPro\PRODUCT_GCJX\server\dataserver
+2017-09-19 09:56:55.244 [main] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x2c63762b0x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:56:55.277 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn02-dev.wlwl.com/10.60.60.94:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:56:55.280 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn02-dev.wlwl.com/10.60.60.94:2181, initiating session
+2017-09-19 09:56:55.288 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn02-dev.wlwl.com/10.60.60.94:2181, sessionid = 0x25c4279e58007e6, negotiated timeout = 40000
+2017-09-19 09:56:55.527 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Successfully joined group dataserver with generation 1
+2017-09-19 09:56:55.528 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Setting newly assigned partitions [send-tz-message-0] for group dataserver
+2017-09-19 09:56:56.258 [Thread-8] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x59ea2a8b connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:56:56.259 [Thread-8] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x59ea2a8b0x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:56:56.263 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn00-dev.wlwl.com/10.60.60.92:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:56:56.265 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn00-dev.wlwl.com/10.60.60.92:2181, initiating session
+2017-09-19 09:56:56.269 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn00-dev.wlwl.com/10.60.60.92:2181, sessionid = 0x5e5f6787cb000e, negotiated timeout = 40000
+2017-09-19 09:56:56.372 [main] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x4168f3d9 connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:56:56.372 [main] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x4168f3d90x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:56:56.383 [main-SendThread(dn01-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn01-dev.wlwl.com/10.60.60.93:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:56:58.194 [Thread-8] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing master protocol: MasterService
+2017-09-19 09:56:58.196 [Thread-8] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing zookeeper sessionid=0x5e5f6787cb000e
+2017-09-19 09:56:58.203 [Thread-8] INFO  org.apache.zookeeper.ZooKeeper -Session: 0x5e5f6787cb000e closed
+2017-09-19 09:56:58.204 [Thread-8-EventThread] INFO  org.apache.zookeeper.ClientCnxn -EventThread shut down
+2017-09-19 09:57:46.140 [main] INFO  com.gimis.DataserverApplication -Starting DataserverApplication on sunlinjun-pc with PID 9060 (E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes started by gimis in E:\JavaPro\PRODUCT_GCJX\server\dataserver)
+2017-09-19 09:57:46.149 [main] INFO  com.gimis.DataserverApplication -No profiles are active
+2017-09-19 09:57:46.225 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca18a14: startup date [Tue Sep 19 09:57:46 CST 2017]; root of context hierarchy
+2017-09-19 09:57:47.319 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory -Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-09-19 09:57:47.844 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'configCache' of type [class com.gimis.util.ConfigCache$$EnhancerBySpringCGLIB$$359a2d0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:57:47.850 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9d160ba9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:57:47.897 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$d73e0bcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:19.973 [main] INFO  com.gimis.DataserverApplication -Starting DataserverApplication on sunlinjun-pc with PID 11964 (E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes started by gimis in E:\JavaPro\PRODUCT_GCJX\server\dataserver)
+2017-09-19 09:58:19.978 [main] INFO  com.gimis.DataserverApplication -No profiles are active
+2017-09-19 09:58:20.057 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c667f46: startup date [Tue Sep 19 09:58:20 CST 2017]; root of context hierarchy
+2017-09-19 09:58:21.127 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory -Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-09-19 09:58:21.611 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'configCache' of type [class com.gimis.util.ConfigCache$$EnhancerBySpringCGLIB$$385523d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.619 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9fd10278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.655 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$d9f9029c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.745 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'spring.cache.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.755 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$69b3ad5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.766 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:21.769 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:58:22.323 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 9020 (http)
+2017-09-19 09:58:22.343 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-09-19 09:58:22.345 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.0.28
+2017-09-19 09:58:22.511 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-09-19 09:58:22.515 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2458 ms
+2017-09-19 09:58:23.000 [localhost-startStop-1] INFO  o.s.b.c.e.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-19 09:58:23.008 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-19 09:58:23.009 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-19 09:58:23.009 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-19 09:58:23.010 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-19 09:58:23.398 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c667f46: startup date [Tue Sep 19 09:58:20 CST 2017]; root of context hierarchy
+2017-09-19 09:58:23.487 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/sendCommand/{myAppKey}/{unid}/{commandid}/{content}]}" onto public java.lang.String com.gimis.web.CommandController.index(java.lang.String,java.lang.String,int,java.lang.String) throws java.io.UnsupportedEncodingException
+2017-09-19 09:58:23.494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:58:23.495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:58:23.544 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:58:23.544 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:58:23.607 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:58:23.936 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-09-19 09:58:24.046 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 9020 (http)
+2017-09-19 09:58:24.053 [main] INFO  com.gimis.DataserverApplication -Started DataserverApplication in 4.756 seconds (JVM running for 6.021)
+2017-09-19 09:58:26.510 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:58:26.555 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:58:26.576 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:58:26.576 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:58:26.588 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:58:26.606 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:58:26.607 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:58:26.608 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:58:26.610 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:58:26.622 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-2
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:58:26.624 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:58:26.624 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:58:27.031 [main] WARN  o.a.hadoop.util.NativeCodeLoader -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-09-19 09:58:27.047 [main] ERROR org.apache.hadoop.util.Shell -Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:355) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:370) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:363) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:93) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:77) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:240) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:257) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:234) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:749) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:734) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:607) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:286) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:282) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User.getCurrent(User.java:185) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.UserProvider.getCurrent(UserProvider.java:88) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:215) [hbase-client-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:119) [hbase-client-1.1.2.jar:1.1.2]
+	at com.gimis.HBase.HBaseUtil.<init>(HBaseUtil.java:72) [classes/:na]
+	at com.gimis.dataserver.gps.SavePositionThread.<init>(SavePositionThread.java:27) [classes/:na]
+	at com.gimis.DataserverApplication.main(DataserverApplication.java:53) [classes/:na]
+2017-09-19 09:58:27.448 [main] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x4bdf connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:58:27.456 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-09-19 09:58:27.457 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:host.name=sunlinjun-pc
+2017-09-19 09:58:27.458 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.version=1.8.0_111
+2017-09-19 09:58:27.458 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.vendor=Oracle Corporation
+2017-09-19 09:58:27.458 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.home=C:\Program Files\Java\jdk1.8.0_111\jre
+2017-09-19 09:58:27.458 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.class.path=E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.3.0.RELEASE\spring-boot-starter-web-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter\1.3.0.RELEASE\spring-boot-starter-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot\1.3.0.RELEASE\spring-boot-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.3.0.RELEASE\spring-boot-autoconfigure-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.3.0.RELEASE\spring-boot-starter-logging-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\gimis\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.13\jcl-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\jul-to-slf4j\1.7.13\jul-to-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.13\log4j-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\yaml\snakeyaml\1.16\snakeyaml-1.16.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.3.0.RELEASE\spring-boot-starter-tomcat-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.28\tomcat-embed-core-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.28\tomcat-embed-el-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.28\tomcat-embed-logging-juli-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.28\tomcat-embed-websocket-8.0.28.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-validation\1.3.0.RELEASE\spring-boot-starter-validation-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\hibernate\hibernate-validator\5.2.2.Final\hibernate-validator-5.2.2.Final.jar;C:\Users\gimis\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\gimis\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\gimis\.m2\repository\com\fasterxml\classmate\1.1.0\classmate-1.1.0.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.3\jackson-databind-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.3\jackson-annotations-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.6.3\jackson-core-2.6.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-web\4.2.3.RELEASE\spring-web-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-aop\4.2.3.RELEASE\spring-aop-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-beans\4.2.3.RELEASE\spring-beans-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-context\4.2.3.RELEASE\spring-context-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-webmvc\4.2.3.RELEASE\spring-webmvc-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-expression\4.2.3.RELEASE\spring-expression-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka_2.10\0.10.0.0\kafka_2.10-0.10.0.0.jar;C:\Users\gimis\.m2\repository\com\101tec\zkclient\0.8\zkclient-0.8.jar;C:\Users\gimis\.m2\repository\org\scala-lang\scala-library\2.10.6\scala-library-2.10.6.jar;C:\Users\gimis\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\gimis\.m2\repository\net\sf\jopt-simple\jopt-simple\4.9\jopt-simple-4.9.jar;C:\Users\gimis\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\gimis\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\gimis\.m2\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\Users\gimis\.m2\repository\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka-clients\0.10.0.1\kafka-clients-0.10.0.1.jar;C:\Users\gimis\.m2\repository\net\jpountz\lz4\lz4\1.3.0\lz4-1.3.0.jar;C:\Users\gimis\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar;C:\Users\gimis\.m2\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;C:\Users\gimis\.m2\repository\redis\clients\jedis\2.7.3\jedis-2.7.3.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\gimis\.m2\repository\mysql\mysql-connector-java\5.1.37\mysql-connector-java-5.1.37.jar;C:\Users\gimis\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.2.0\hadoop-hdfs-2.2.0.jar;C:\Users\gimis\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\gimis\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty\6.1.26\jetty-6.1.26.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-server\1.9\jersey-server-1.9.jar;C:\Users\gimis\.m2\repository\asm\asm\3.1\asm-3.1.jar;C:\Users\gimis\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\gimis\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\gimis\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar;C:\Users\gimis\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\gimis\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\gimis\.m2\repository\commons-daemon\commons-daemon\1.0.13\commons-daemon-1.0.13.jar;C:\Users\gimis\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\gimis\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\gimis\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\gimis\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.8\jackson-core-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.8\jackson-mapper-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\tomcat\jasper-runtime\5.5.23\jasper-runtime-5.5.23.jar;C:\Users\gimis\.m2\repository\commons-el\commons-el\1.0\commons-el-1.0.jar;C:\Users\gimis\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-client\1.1.2\hbase-client-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-annotations\1.1.2\hbase-annotations-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-common\1.1.2\hbase-common-1.1.2.jar;C:\Users\gimis\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-protocol\1.1.2\hbase-protocol-1.1.2.jar;C:\Users\gimis\.m2\repository\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;C:\Users\gimis\.m2\repository\org\apache\htrace\htrace-core\3.1.0-incubating\htrace-core-3.1.0-incubating.jar;C:\Users\gimis\.m2\repository\org\jruby\jcodings\jcodings\1.0.8\jcodings-1.0.8.jar;C:\Users\gimis\.m2\repository\org\jruby\joni\joni\2.1.2\joni-2.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-auth\2.5.1\hadoop-auth-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-common\2.5.1\hadoop-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-annotations\2.5.1\hadoop-annotations-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\gimis\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\gimis\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\gimis\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\gimis\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\gimis\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\gimis\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\gimis\.m2\repository\com\jcraft\jsch\0.1.42\jsch-0.1.42.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\gimis\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.5.1\hadoop-mapreduce-client-core-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.5.1\hadoop-yarn-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.5.1\hadoop-yarn-api-2.5.1.jar;C:\Users\gimis\.m2\repository\com\github\stephenc\findbugs\findbugs-annotations\1.3.9-1\findbugs-annotations-1.3.9-1.jar;C:\Users\gimis\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Program Files\Java\jdk1.8.0_111\lib\tools.jar;C:\Users\gimis\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-core\4.2.3.RELEASE\spring-core-4.2.3.RELEASE.jar
+2017-09-19 09:58:27.458 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Java\jdk1.8.0_111\jre\bin;D:\Program Files (x86)\Borland\Delphi7\Bin;D:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;E:\JavaPro\apache-maven-3.3.3\bin;C:\Program Files\nodejs\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Python\Python35;C:\Users\gimis\AppData\Roaming\npm;C:\Users\gimis\Desktop;;.
+2017-09-19 09:58:27.459 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.io.tmpdir=C:\Users\gimis\AppData\Local\Temp\
+2017-09-19 09:58:27.459 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.compiler=<NA>
+2017-09-19 09:58:27.461 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.name=Windows 8.1
+2017-09-19 09:58:27.462 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.arch=amd64
+2017-09-19 09:58:27.462 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.version=6.3
+2017-09-19 09:58:27.462 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.name=gimis
+2017-09-19 09:58:27.462 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.home=C:\Users\gimis
+2017-09-19 09:58:27.462 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.dir=E:\JavaPro\PRODUCT_GCJX\server\dataserver
+2017-09-19 09:58:27.464 [main] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x4bdf0x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:58:27.483 [main-SendThread(dn01-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn01-dev.wlwl.com/10.60.60.93:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:58:27.728 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Discovered coordinator dn03-dev.wlwl.com:9092 (id: 2147483314 rack: null) for group dataserver.
+2017-09-19 09:58:27.736 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Revoking previously assigned partitions [] for group dataserver
+2017-09-19 09:58:27.736 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -(Re-)joining group dataserver
+2017-09-19 09:58:27.749 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Successfully joined group dataserver with generation 3
+2017-09-19 09:58:27.750 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Setting newly assigned partitions [send-tz-message-0] for group dataserver
+2017-09-19 09:59:05.771 [main] INFO  com.gimis.DataserverApplication -Starting DataserverApplication on sunlinjun-pc with PID 10412 (E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes started by gimis in E:\JavaPro\PRODUCT_GCJX\server\dataserver)
+2017-09-19 09:59:05.776 [main] INFO  com.gimis.DataserverApplication -No profiles are active
+2017-09-19 09:59:05.857 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c7045b9: startup date [Tue Sep 19 09:59:05 CST 2017]; root of context hierarchy
+2017-09-19 09:59:06.914 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory -Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-09-19 09:59:07.410 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'configCache' of type [class com.gimis.util.ConfigCache$$EnhancerBySpringCGLIB$$e84623db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.418 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4fc2027a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.467 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$89ea029e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.555 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'spring.cache.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.564 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$19a4ad5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.576 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:07.580 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-19 09:59:08.184 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 9020 (http)
+2017-09-19 09:59:08.201 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-09-19 09:59:08.203 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.0.28
+2017-09-19 09:59:08.379 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-09-19 09:59:08.380 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2523 ms
+2017-09-19 09:59:08.840 [localhost-startStop-1] INFO  o.s.b.c.e.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-19 09:59:08.849 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-19 09:59:08.850 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-19 09:59:08.850 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-19 09:59:08.851 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-19 09:59:09.260 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c7045b9: startup date [Tue Sep 19 09:59:05 CST 2017]; root of context hierarchy
+2017-09-19 09:59:09.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/sendCommand/{myAppKey}/{unid}/{commandid}/{content}]}" onto public java.lang.String com.gimis.web.CommandController.index(java.lang.String,java.lang.String,int,java.lang.String) throws java.io.UnsupportedEncodingException
+2017-09-19 09:59:09.350 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:59:09.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2017-09-19 09:59:09.404 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:59:09.405 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:59:09.470 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 09:59:09.789 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-09-19 09:59:09.916 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 9020 (http)
+2017-09-19 09:59:09.922 [main] INFO  com.gimis.DataserverApplication -Started DataserverApplication in 4.889 seconds (JVM running for 5.697)
+2017-09-19 09:59:12.573 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:59:12.627 [main] INFO  o.a.k.c.consumer.ConsumerConfig -ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = dataserver
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-09-19 09:59:12.663 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:59:12.664 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:59:12.677 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:59:12.694 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:59:12.695 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:59:12.696 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:59:12.700 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:59:12.711 [main] INFO  o.a.k.c.producer.ProducerConfig -ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [nn00-dev.wlwl.com:9092, dn00-dev.wlwl.com:9092, dn01-dev.wlwl.com:9092, dn02-dev.wlwl.com:9092, dn03-dev.wlwl.com:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-2
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-09-19 09:59:12.711 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka version : 0.10.0.1
+2017-09-19 09:59:12.711 [main] INFO  o.a.kafka.common.utils.AppInfoParser -Kafka commitId : a7a17cdec9eaa6c5
+2017-09-19 09:59:13.106 [main] WARN  o.a.hadoop.util.NativeCodeLoader -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-09-19 09:59:13.121 [main] ERROR org.apache.hadoop.util.Shell -Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:355) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:370) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:363) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:93) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:77) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:240) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:257) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:234) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:749) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:734) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:607) [hadoop-common-2.5.1.jar:na]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:286) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User$SecureHadoopUser.<init>(User.java:282) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.User.getCurrent(User.java:185) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.security.UserProvider.getCurrent(UserProvider.java:88) [hbase-common-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:215) [hbase-client-1.1.2.jar:1.1.2]
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:119) [hbase-client-1.1.2.jar:1.1.2]
+	at com.gimis.HBase.HBaseUtil.<init>(HBaseUtil.java:72) [classes/:na]
+	at com.gimis.dataserver.gps.SavePositionThread.<init>(SavePositionThread.java:27) [classes/:na]
+	at com.gimis.DataserverApplication.main(DataserverApplication.java:53) [classes/:na]
+2017-09-19 09:59:13.537 [main] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x3610f277 connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:59:13.547 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-09-19 09:59:13.547 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:host.name=sunlinjun-pc
+2017-09-19 09:59:13.547 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.version=1.8.0_111
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.vendor=Oracle Corporation
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.home=C:\Program Files\Java\jdk1.8.0_111\jre
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.class.path=E:\JavaPro\PRODUCT_GCJX\server\dataserver\target\classes;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.3.0.RELEASE\spring-boot-starter-web-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter\1.3.0.RELEASE\spring-boot-starter-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot\1.3.0.RELEASE\spring-boot-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.3.0.RELEASE\spring-boot-autoconfigure-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.3.0.RELEASE\spring-boot-starter-logging-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\gimis\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\gimis\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.13\jcl-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\jul-to-slf4j\1.7.13\jul-to-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.13\log4j-over-slf4j-1.7.13.jar;C:\Users\gimis\.m2\repository\org\yaml\snakeyaml\1.16\snakeyaml-1.16.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.3.0.RELEASE\spring-boot-starter-tomcat-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.28\tomcat-embed-core-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.28\tomcat-embed-el-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.28\tomcat-embed-logging-juli-8.0.28.jar;C:\Users\gimis\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.28\tomcat-embed-websocket-8.0.28.jar;C:\Users\gimis\.m2\repository\org\springframework\boot\spring-boot-starter-validation\1.3.0.RELEASE\spring-boot-starter-validation-1.3.0.RELEASE.jar;C:\Users\gimis\.m2\repository\org\hibernate\hibernate-validator\5.2.2.Final\hibernate-validator-5.2.2.Final.jar;C:\Users\gimis\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\gimis\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\gimis\.m2\repository\com\fasterxml\classmate\1.1.0\classmate-1.1.0.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.3\jackson-databind-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.3\jackson-annotations-2.6.3.jar;C:\Users\gimis\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.6.3\jackson-core-2.6.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-web\4.2.3.RELEASE\spring-web-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-aop\4.2.3.RELEASE\spring-aop-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-beans\4.2.3.RELEASE\spring-beans-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-context\4.2.3.RELEASE\spring-context-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-webmvc\4.2.3.RELEASE\spring-webmvc-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-expression\4.2.3.RELEASE\spring-expression-4.2.3.RELEASE.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka_2.10\0.10.0.0\kafka_2.10-0.10.0.0.jar;C:\Users\gimis\.m2\repository\com\101tec\zkclient\0.8\zkclient-0.8.jar;C:\Users\gimis\.m2\repository\org\scala-lang\scala-library\2.10.6\scala-library-2.10.6.jar;C:\Users\gimis\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\gimis\.m2\repository\net\sf\jopt-simple\jopt-simple\4.9\jopt-simple-4.9.jar;C:\Users\gimis\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\gimis\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\gimis\.m2\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\Users\gimis\.m2\repository\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\kafka\kafka-clients\0.10.0.1\kafka-clients-0.10.0.1.jar;C:\Users\gimis\.m2\repository\net\jpountz\lz4\lz4\1.3.0\lz4-1.3.0.jar;C:\Users\gimis\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar;C:\Users\gimis\.m2\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;C:\Users\gimis\.m2\repository\redis\clients\jedis\2.7.3\jedis-2.7.3.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\gimis\.m2\repository\mysql\mysql-connector-java\5.1.37\mysql-connector-java-5.1.37.jar;C:\Users\gimis\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.2.0\hadoop-hdfs-2.2.0.jar;C:\Users\gimis\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\gimis\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty\6.1.26\jetty-6.1.26.jar;C:\Users\gimis\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\gimis\.m2\repository\com\sun\jersey\jersey-server\1.9\jersey-server-1.9.jar;C:\Users\gimis\.m2\repository\asm\asm\3.1\asm-3.1.jar;C:\Users\gimis\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\gimis\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\gimis\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar;C:\Users\gimis\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\gimis\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\gimis\.m2\repository\commons-daemon\commons-daemon\1.0.13\commons-daemon-1.0.13.jar;C:\Users\gimis\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\gimis\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\gimis\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\gimis\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.8\jackson-core-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.8\jackson-mapper-asl-1.8.8.jar;C:\Users\gimis\.m2\repository\tomcat\jasper-runtime\5.5.23\jasper-runtime-5.5.23.jar;C:\Users\gimis\.m2\repository\commons-el\commons-el\1.0\commons-el-1.0.jar;C:\Users\gimis\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-client\1.1.2\hbase-client-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-annotations\1.1.2\hbase-annotations-1.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-common\1.1.2\hbase-common-1.1.2.jar;C:\Users\gimis\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\gimis\.m2\repository\org\apache\hbase\hbase-protocol\1.1.2\hbase-protocol-1.1.2.jar;C:\Users\gimis\.m2\repository\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;C:\Users\gimis\.m2\repository\org\apache\htrace\htrace-core\3.1.0-incubating\htrace-core-3.1.0-incubating.jar;C:\Users\gimis\.m2\repository\org\jruby\jcodings\jcodings\1.0.8\jcodings-1.0.8.jar;C:\Users\gimis\.m2\repository\org\jruby\joni\joni\2.1.2\joni-2.1.2.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-auth\2.5.1\hadoop-auth-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-common\2.5.1\hadoop-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-annotations\2.5.1\hadoop-annotations-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\gimis\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\gimis\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\gimis\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\gimis\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\gimis\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\gimis\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\gimis\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\gimis\.m2\repository\com\jcraft\jsch\0.1.42\jsch-0.1.42.jar;C:\Users\gimis\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\gimis\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.5.1\hadoop-mapreduce-client-core-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.5.1\hadoop-yarn-common-2.5.1.jar;C:\Users\gimis\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.5.1\hadoop-yarn-api-2.5.1.jar;C:\Users\gimis\.m2\repository\com\github\stephenc\findbugs\findbugs-annotations\1.3.9-1\findbugs-annotations-1.3.9-1.jar;C:\Users\gimis\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Program Files\Java\jdk1.8.0_111\lib\tools.jar;C:\Users\gimis\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gimis\.m2\repository\org\springframework\spring-core\4.2.3.RELEASE\spring-core-4.2.3.RELEASE.jar
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Java\jdk1.8.0_111\jre\bin;D:\Program Files (x86)\Borland\Delphi7\Bin;D:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;E:\JavaPro\apache-maven-3.3.3\bin;C:\Program Files\nodejs\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Python\Python35;C:\Users\gimis\AppData\Roaming\npm;C:\Users\gimis\Desktop;;.
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.io.tmpdir=C:\Users\gimis\AppData\Local\Temp\
+2017-09-19 09:59:13.548 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:java.compiler=<NA>
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.name=Windows 8.1
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.arch=amd64
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:os.version=6.3
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.name=gimis
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.home=C:\Users\gimis
+2017-09-19 09:59:13.551 [main] INFO  org.apache.zookeeper.ZooKeeper -Client environment:user.dir=E:\JavaPro\PRODUCT_GCJX\server\dataserver
+2017-09-19 09:59:13.553 [main] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x3610f2770x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:59:13.571 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn02-dev.wlwl.com/10.60.60.94:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:59:13.573 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn02-dev.wlwl.com/10.60.60.94:2181, initiating session
+2017-09-19 09:59:13.581 [main-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn02-dev.wlwl.com/10.60.60.94:2181, sessionid = 0x25c4279e58007e7, negotiated timeout = 40000
+2017-09-19 09:59:13.821 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Discovered coordinator dn03-dev.wlwl.com:9092 (id: 2147483314 rack: null) for group dataserver.
+2017-09-19 09:59:13.824 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Revoking previously assigned partitions [] for group dataserver
+2017-09-19 09:59:13.824 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -(Re-)joining group dataserver
+2017-09-19 09:59:14.107 [Thread-8] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x73eec244 connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:59:14.111 [Thread-8] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x73eec2440x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:59:14.117 [Thread-8-SendThread(dn01-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn01-dev.wlwl.com/10.60.60.93:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:59:14.191 [main] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x342ee097 connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:59:14.195 [main] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x342ee0970x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:59:14.203 [main-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn00-dev.wlwl.com/10.60.60.92:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:59:14.206 [main-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn00-dev.wlwl.com/10.60.60.92:2181, initiating session
+2017-09-19 09:59:14.209 [main-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn00-dev.wlwl.com/10.60.60.92:2181, sessionid = 0x5e5f6787cb000f, negotiated timeout = 40000
+2017-09-19 09:59:14.324 [Thread-12] INFO  com.mchange.v2.log.MLog -MLog clients using log4j logging.
+2017-09-19 09:59:14.422 [Thread-12] INFO  com.mchange.v2.c3p0.C3P0Registry -Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-09-19 09:59:14.524 [Thread-12] INFO  c.m.v.c.i.AbstractPoolBackedDataSource -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@905a5d0c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8a528ccc [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 30000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2t28ti9q164w7nm1yt80tz|1389b64e, idleConnectionTestPeriod -> 120, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@6f81efcb [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2t28ti9q164w7nm1yt80tz|25c68380, jdbcUrl -> jdbc:mysql://218.94.80.180:20000/tyzg, properties -> {driverClass=com.mysql.jdbc.Driver, user=******, password=******, jdbcUrl=jdbc:mysql://218.94.80.180:20000/tyzg} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2t28ti9q164w7nm1yt80tz|c25020f, numHelperThreads -> 3 ]
+2017-09-19 09:59:15.763 [pool-2-thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator -Successfully joined group dataserver with generation 4
+2017-09-19 09:59:15.765 [pool-2-thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator -Setting newly assigned partitions [send-tz-message-0] for group dataserver
+2017-09-19 09:59:34.514 [Timer-0] WARN  c.m.v.a.ThreadPoolAsynchronousRunner -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1fc66e13 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2017-09-19 09:59:34.518 [Timer-0] WARN  c.m.v.a.ThreadPoolAsynchronousRunner -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1fc66e13 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@61269a06 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4d68e5c (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@301376ef (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@7ae58f7c
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2fc6dc8c
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		com.mysql.jdbc.ConnectionImpl.getCharsetConverter(ConnectionImpl.java:2742)
+		com.mysql.jdbc.StringUtils.getBytes(StringUtils.java:617)
+		com.mysql.jdbc.Buffer.writeStringNoNull(Buffer.java:658)
+		com.mysql.jdbc.Buffer.writeString(Buffer.java:634)
+		com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4280)
+		com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1259)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2254)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		com.mysql.jdbc.SingleByteCharsetConverter.<clinit>(SingleByteCharsetConverter.java:51)
+		com.mysql.jdbc.ConnectionImpl.getCharsetConverter(ConnectionImpl.java:2742)
+		com.mysql.jdbc.StringUtils.getBytes(StringUtils.java:617)
+		com.mysql.jdbc.Buffer.writeStringNoNull(Buffer.java:658)
+		com.mysql.jdbc.Buffer.writeString(Buffer.java:634)
+		com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4280)
+		com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1259)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2254)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		com.mysql.jdbc.ConnectionImpl.getCharsetConverter(ConnectionImpl.java:2742)
+		com.mysql.jdbc.StringUtils.getBytes(StringUtils.java:617)
+		com.mysql.jdbc.Buffer.writeStringNoNull(Buffer.java:658)
+		com.mysql.jdbc.Buffer.writeString(Buffer.java:634)
+		com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4280)
+		com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1259)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2254)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2017-09-19 09:59:35.120 [Thread-8-SendThread(dn01-dev.wlwl.com:2181)] WARN  org.apache.zookeeper.ClientCnxn -Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_111]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_111]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.6.jar:3.4.6-1569965]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081) ~[zookeeper-3.4.6.jar:3.4.6-1569965]
+2017-09-19 09:59:35.225 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn00-dev.wlwl.com/10.60.60.92:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:59:35.227 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn00-dev.wlwl.com/10.60.60.92:2181, initiating session
+2017-09-19 09:59:35.230 [Thread-8-SendThread(dn00-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn00-dev.wlwl.com/10.60.60.92:2181, sessionid = 0x5e5f6787cb0010, negotiated timeout = 40000
+2017-09-19 09:59:35.232 [Thread-8] WARN  o.a.h.h.z.RecoverableZooKeeper -Possibly transient ZooKeeper, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, exception=org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+2017-09-19 09:59:37.236 [Thread-8] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing master protocol: MasterService
+2017-09-19 09:59:37.243 [Thread-8] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing zookeeper sessionid=0x5e5f6787cb0010
+2017-09-19 09:59:37.249 [Thread-8] INFO  org.apache.zookeeper.ZooKeeper -Session: 0x5e5f6787cb0010 closed
+2017-09-19 09:59:37.250 [Thread-8-EventThread] INFO  org.apache.zookeeper.ClientCnxn -EventThread shut down
+2017-09-19 09:59:56.592 [Thread-10] INFO  c.gimis.dataserver.can.SaveCANThread -载入 CAN定义成功!
+2017-09-19 09:59:56.595 [Thread-10] INFO  o.a.h.h.z.RecoverableZooKeeper -Process identifier=hconnection-0x772f1f0e connecting to ZooKeeper ensemble=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181
+2017-09-19 09:59:56.596 [Thread-10] INFO  org.apache.zookeeper.ZooKeeper -Initiating client connection, connectString=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181 sessionTimeout=90000 watcher=hconnection-0x772f1f0e0x0, quorum=dn00-dev.wlwl.com:2181,dn01-dev.wlwl.com:2181,dn02-dev.wlwl.com:2181, baseZNode=/hbase
+2017-09-19 09:59:56.602 [Thread-10-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Opening socket connection to server dn02-dev.wlwl.com/10.60.60.94:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-09-19 09:59:56.607 [Thread-10-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Socket connection established to dn02-dev.wlwl.com/10.60.60.94:2181, initiating session
+2017-09-19 09:59:56.610 [Thread-10-SendThread(dn02-dev.wlwl.com:2181)] INFO  org.apache.zookeeper.ClientCnxn -Session establishment complete on server dn02-dev.wlwl.com/10.60.60.94:2181, sessionid = 0x25c4279e58007e8, negotiated timeout = 40000
+2017-09-19 09:59:57.116 [Thread-10] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing master protocol: MasterService
+2017-09-19 09:59:57.122 [Thread-10] INFO  o.a.h.h.c.ConnectionManager$HConnectionImplementation -Closing zookeeper sessionid=0x25c4279e58007e8
+2017-09-19 09:59:57.127 [Thread-10] INFO  org.apache.zookeeper.ZooKeeper -Session: 0x25c4279e58007e8 closed
+2017-09-19 09:59:57.127 [Thread-10-EventThread] INFO  org.apache.zookeeper.ClientCnxn -EventThread shut down

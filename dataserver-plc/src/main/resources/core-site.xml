@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>io.native.lib.available</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>/Tsst/data/hdfs2/tmp</value>
+		<description>A base for other temporary directories.</description>
+	</property>
+	<property>
+		<name>fs.defaultFS</name>
+			
+			<!--  
+		<value>hdfs://nn00-dev.wlwl.com:9000</value>
+			-->	 
+	  
+		<value>hdfs://nn00-dev.tyzg.com:9000</value>
+ 
+ 
+		<final>true</final>
+	</property>
+	<property>
+		<name>io.file.buffer.size</name>
+		<value>131072</value>
+	</property>
+</configuration>

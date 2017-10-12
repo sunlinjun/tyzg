@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>hbase.rootdir</name>
+		
+		
+			<value>hdfs://nn00-dev.tyzg.com:9000/hbase</value>
+		
+ 
+		  <!-- 
+             <value>hdfs://nn00-dev.wlwl.com:9000/hbase</value>	
+		-->  	
+		
+		
+	</property>
+	<property>
+		<name>hbase.cluster.distributed</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>hbase.zookeeper.quorum</name> 
+		  
+		
+          <value>dn00-dev.tyzg.com,dn01-dev.tyzg.com,dn02-dev.tyzg.com</value>
+          
+       <!--  
+       <value>dn00-dev.wlwl.com,dn01-dev.wlwl.com,dn02-dev.wlwl.com</value>
+ 
+       -->  
+       
+        
+	</property>
+</configuration>

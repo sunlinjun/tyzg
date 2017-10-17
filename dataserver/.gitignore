@@ -1,7 +1,9 @@
+log/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
+*.log
 .classpath
 .factorypath
 .project

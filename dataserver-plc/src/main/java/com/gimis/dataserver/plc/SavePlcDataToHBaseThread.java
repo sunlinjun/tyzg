@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
+import java.util.HashMap;	
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map.Entry;
@@ -32,10 +32,14 @@ public class SavePlcDataToHBaseThread extends Thread{
 	
 	//HBase   
 	private HBaseUtil hBaseUtil=new HBaseUtil();
+	
+
  
 	
 	public SavePlcDataToHBaseThread(){
 	}
+	
+
 		
 	private void createHBaseTable(){
 		Calendar a=Calendar.getInstance();
@@ -46,7 +50,9 @@ public class SavePlcDataToHBaseThread extends Thread{
 			currentYear=year;
 		}				
 	}
-		
+	
+	
+	
 	public void run(){
 		int count=0;
  
@@ -58,9 +64,14 @@ public class SavePlcDataToHBaseThread extends Thread{
 			try{
 				//创建HBase表
 				createHBaseTable();
+				
+				
  
 				HashMap<String,HashMap<String,String>> list=GlobalCache.getInstance().getPlcDataQueue().poll();				
 				if(list!=null){
+					
+					
+					
 					ArrayList<HBaseData> hbaseList=new ArrayList<HBaseData>(); 
 					Iterator<Entry<String, HashMap<String, String>>> iter =list.entrySet().iterator();
 										

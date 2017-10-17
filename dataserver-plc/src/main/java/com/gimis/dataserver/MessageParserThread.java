@@ -1,23 +1,28 @@
 package com.gimis.dataserver;
  
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Hashtable;
 
-
 import com.gimis.dataserver.command.RepeatSendCommandList;
+import com.gimis.dataserver.plc.OffsetResolution;
 import com.gimis.dataserver.terminal.GPSDevice;
 import com.gimis.dataserver.terminal.GPSDeviceManager;
+import com.gimis.util.DBConnection;
 import com.gimis.util.GlobalCache;
 import com.gimis.util.PlcBody;
 import com.gimis.util.PlcContent;
 import com.gimis.util.SourceMessage;
+import com.mysql.jdbc.Connection;
 
 public class MessageParserThread extends Thread{
-	
-	 	
+
 	//private final String GpsVarId="759";
 	private final String GpsVarId="65530";
 	 
@@ -25,11 +30,24 @@ public class MessageParserThread extends Thread{
 	
 	private SimpleDateFormat milsdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss.SSS");
 	
+	private DecimalFormat df=new DecimalFormat("0.000");
+	
 	private GPSDeviceManager gpsDeviceManager;
 	
 	private RepeatSendCommandList sendCommandList;
 	
 	private Hashtable<String,Long> deviceFlow=new Hashtable<String,Long>();
+	
+
+	//设备与数据字典对应关系   Key 设备 GPS_ID  value  数据字典UNID
+	private Hashtable<String,String> deviceFiber=new Hashtable<String,String>();
+	
+	//数据字典中的偏移量与分辨率  Key   数据字典UNID+_+var_id
+	private Hashtable<String,OffsetResolution> deviceOffsetResolution =new Hashtable<String,OffsetResolution>();
+	
+	//最后一次获取偏移量的时间
+	private long lastGetPlcFiberTime=0;
+ 
 	
 	//最后一次打印流量的时间
 	private long lastPrintFlowTime=0;
@@ -37,6 +55,94 @@ public class MessageParserThread extends Thread{
 	public MessageParserThread(GPSDeviceManager gpsDeviceManager,RepeatSendCommandList sendCommandList){
 		this.gpsDeviceManager=gpsDeviceManager;	
 		this.sendCommandList=sendCommandList;
+	}
+ 
+	private void refrushPlcFiberDB(){
+		long diff=System.currentTimeMillis()-lastGetPlcFiberTime;
+		if(diff>3600000){
+			lastGetPlcFiberTime=System.currentTimeMillis();
+
+			StringBuilder sb=new StringBuilder();
+ 
+			
+			Statement st = null;
+			Connection connection=null;
+			ResultSet rs=null;
+			try {
+				
+				connection=DBConnection.getConnection();
+				
+				//获取设备对应的数据字典		 	
+				st = connection.createStatement();					
+				sb.append("select GPS_ID,FIBER_UNID from device where FLAG_DEL=0 ");
+				rs = st.executeQuery(sb.toString());
+				
+				deviceFiber.clear();
+				while (rs.next() != false) {		
+					try{
+						if(rs.getString("GPS_ID")!=null && rs.getString("FIBER_UNID")!=null){
+							deviceFiber.put(rs.getString("GPS_ID"), rs.getString("FIBER_UNID"));
+						}											
+					}catch(Exception e){
+						
+					}
+				}
+				
+				rs.close();				
+				st.close();				
+				st = connection.createStatement();
+				sb.setLength(0);
+				sb.append("select FIBER_UNID,VAR_ID,OFFSET,RESOLUTION from fiber_plc ");
+				rs = st.executeQuery(sb.toString());
+				deviceOffsetResolution.clear();
+				while (rs.next() != false) {
+					
+					try{
+
+						String key=rs.getString("FIBER_UNID")+"_"+rs.getString("VAR_ID");
+						
+						OffsetResolution offset=new OffsetResolution();
+						if(rs.getString("OFFSET")!=null){
+							offset.setOffset(Integer.parseInt(rs.getString("OFFSET")));
+						}
+						
+						if(rs.getString("RESOLUTION")!=null){
+							offset.setResolution(Double.parseDouble(rs.getString("RESOLUTION")));
+						}
+						
+						if(offset.getOffset()!=0 ||
+								offset.getResolution()>1.001 || offset.getResolution()<0.999){
+							deviceOffsetResolution.put(key, offset);	
+						}
+					}catch(Exception e){
+						
+					}												
+				}
+				
+			} catch (Exception e) {		
+				e.printStackTrace();
+			}finally{
+				
+				try{
+					rs.close();
+				}catch(Exception e){
+					
+				}			
+				try {
+					st.close();					
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}	
+				
+				try {			
+					connection.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}	
+		}
 	}
 	
 	private void printFlow(){
@@ -52,19 +158,50 @@ public class MessageParserThread extends Thread{
         	for(java.util.Map.Entry<String, Long> entry:deviceFlow.entrySet())
         	{
         		sb.append(" ").append(entry.getKey()+":"+entry.getValue());
-        	}  
-        	
+        	}          	
         	System.out.println(sb.toString());
         	 
 		}		
 	}
 	
+	//计算偏移量和分辨率后的新值
+	private void updateOffsetResolution(String gpsId,HashMap<String,String> hashMap,
+			HashMap<String,String> hashMap2,
+			String key,String value){
+		
+		String fiberUnid= deviceFiber.get(gpsId);
+		if(fiberUnid!=null){			
+			String fKey=fiberUnid+"_"+key;
+			OffsetResolution offsetResolution= deviceOffsetResolution.get(fKey);
+			if(offsetResolution!=null){	
+				
+				if(offsetResolution.getOffset()!=0 || 
+						offsetResolution.getResolution()>1.001 ||
+						offsetResolution.getResolution()<0.999){
+					try{
+						double dTemp=Double.parseDouble(value);	
+						dTemp=(dTemp-offsetResolution.getOffset())*offsetResolution.getResolution();					
+						hashMap.put(key, df.format(dTemp));
+						hashMap2.put(key, df.format(dTemp));
+					}catch(Exception e){					
+					}						
+				}											
+			} 
+		} 						
+	}
+	
 	public void run(){
+		
+		
+		
 		int count=0;
 		while(true){ 			
 			try{				
 				SourceMessage sourceMessage=GlobalCache.getInstance().getSourceMessageQueue().poll();					
 				if(sourceMessage!=null){	
+					
+					
+					refrushPlcFiberDB();
 
 					PlcBody plcBody=parser(sourceMessage.getData());	
 					
@@ -136,12 +273,15 @@ public class MessageParserThread extends Thread{
 										}								
 										map.put(array1[0], array1[1]);							
 										
-										hashMap.put(array1[0], array1[1]);
+										
 										if(i==0){
 											hashMap.put("gps_time", sdf.format(date));
 										}
 																		
-										if(array1[0].equals(GpsVarId)){									
+										if(array1[0].equals(GpsVarId)){		
+											
+											hashMap.put(array1[0], array1[1]);
+											
 											PlcContent plcContent=new PlcContent();
 											plcContent.setDeviceUnid(gpsDevice.getDevice_unid());
 											plcContent.setPlcId(gpsDevice.getGpsID());
@@ -150,6 +290,9 @@ public class MessageParserThread extends Thread{
 											plcContent.setPlcVarTime(date);									
 											list.add(plcContent);
 											GlobalCache.getInstance().getGpsDataQueue().put(plcContent);
+										}else{										
+											updateOffsetResolution(plcBody.getPlcId(),hashMap,map,
+													array1[0], array1[1]); 
 										}
 										
 									}else{
@@ -204,10 +347,7 @@ public class MessageParserThread extends Thread{
 		}
 		
 	}
-	
- 
-	
-	
+
 	private PlcBody parser(byte[] data){
 		
 		try{

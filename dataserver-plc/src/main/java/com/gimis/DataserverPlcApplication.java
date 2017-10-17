@@ -88,9 +88,6 @@ public class DataserverPlcApplication {
 		// 接收消息
 		PlcDataConsumer plcDataConsumer = new PlcDataConsumer();
 		plcDataConsumer.run();
-		
-		
-		
 
 	}
 	
